@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Seminarska pica</title>
+
+
+    <link rel="stylesheet" href="stil.css">
+
+
+
+    <script src="skript.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="seminarska.html">DOMOV</a>
+            <a href="menu.html">MENU</a>
+            <a href="rezervacija.html">KONTAKT</a>
+            <a href="pizzaCalc.html">ŽELITE TESTO IZDELATI SAMI</a>
+        </div>
+    </header>
+    <div class="centralizacija">
+        <div class="formKalk">
+            <div class="Kalk">
+                <h1 class="naslovMenu">Kalkulator Testa </h1>
+                <div class="containerKalk">
+
+                    <div class="slideKalk">
+                        <div class="imgeKalk">
+                            <img id="napolitana" src="slike/napolitana.jpg" alt="pica">
+                            <img id="romana" src="slike/romana.jpg" alt="pica">
+                            <img id="polnozrnata" src="slike/polnozrnata2.jpg" alt="pica">
+                            <img id="foccacia" src="slike/foccacia.jpg" alt="pica">
+                        </div>
+                    </div>
+
+                </div>
+
+                <br><br>
+                <div>
+                    kakšno pico želite izdelati: <br>
+                    <div class="Vsebina3">
+
+
+                        <input type="radio" id="napolitanaRadio" name="option" onclick="showImage('napolitana')"
+                            required>
+                        <label class="tipPice" for="napolitanaRadio">Napolitana</label>
+
+
+                        <input type="radio" id="romanaRadio" name="option" onclick="showImage('romana')" required>
+                        <label class="tipPice" for="romanaRadio">Romana</label>
+
+
+                        <input type="radio" id="polnozrnataRadio" name="option" onclick="showImage('polnozrnata')"
+                            required>
+                        <label class="tipPice" for="polnozrnataRadio">Polnozrnata</label>
+
+
+                        <input type="radio" id="foccaciaRadio" name="option" onclick="showImage('foccacia')" checked
+                            required>
+                        <label class="tipPice" for="foccaciaRadio">Foccacia</label>
+
+
+                    </div>
+                    <p>Želite količino moke vnesiti sami?<br></p>
+                    <div class="Vsebina3">
+                        <input type="radio" id="mokaRadio" name="option2" value="miza1" onclick="txtShow('Moka')"
+                            required>
+                        <label class="tipPice" for="mokaRadio">Da</label>
+                        <input type="radio" id="stOsebRadio" name="option2" value="miza2" onclick="txtShow('Osebe')"
+                            checked required>
+                        <label class="tipPice" for="stOsebRadio">Ne, dalam po osebah </label>
+                    </div>
+                    <div class="mokaOsebe">
+                        <div class="Osebe" id="Osebe">
+                            <label for="stOseb" id="stOseb">Za koliko oseb pripravljate testo:</label>
+                            <input type="text" id="stOsebText" name="stOseb" maxlength="2" placeholder="Število oseb"><br>
+                        </div>
+                        <div class="Moka" id="Moka">
+                            <label id="moka" for="mokaText">količina moke izražena v gramih: </label>
+                            <input type="text" id="mokaText" name="moka" maxlength="5" placeholder="Kolicina moke" ><br>
+                        </div>
+                    </div>
+                    <br>
+                    <label for="Vlaga">% Vlage v ozračju</label>
+                    <input type="text" id="Vlaga" name="Vlaga" placeholder="polje ni obvezno, a zaželeno"
+                        class="vlagaTxt"><br>
+                    <div class="Kalkbuttons">
+                        <button  class="izracunajBtn1" onclick="izracunaj()">
+                            <p>Izracunaj</p>
+                        </button>
+                        
+                        <button class="izracunajBtn" onclick="zbrisiZgodovino()">
+                            <p>zbriši zgodovino</p>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Rezultati">
+                <h1>Kar boste potrebovali:</h1><br>
+
+                <div id="rezultati"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

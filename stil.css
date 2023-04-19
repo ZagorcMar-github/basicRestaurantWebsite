@@ -1,0 +1,667 @@
+/*Fire Brick #b22222 #989692 #cbccc9,#91908d,#3D4849,#EAE7DC*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(156, 156, 156) ;
+}
+
+
+
+
+/*hero page segment*/
+.home {
+    margin-bottom: 3%;
+    border-radius: 12%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.home .container .slide {
+    position: relative;
+    background-position-x: left;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+}
+.span{
+    font-size: 400px;
+}
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.home .container .slide .content {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    flex: 1 1 45rem;
+
+
+}
+.home .container .slide .imge {
+    animation-duration: 2s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    flex: 1 1 50rem;
+    border-radius: 12%;
+
+}
+
+.home .container .slide .imge img {
+    width: 100%;
+
+
+}
+
+.home .container .slide .imge2 {
+
+    flex: 1 1 45rem;
+
+}
+
+.home .container .slide .imge2 img {
+    width: 100%;
+
+}
+
+
+.home .container .slide .content p {
+    width: 100%;
+    text-align: center;
+
+    
+}
+
+ .naslovGlavni{
+    color: #ee301b;
+    font-size:50px;
+    width: 100%;
+    text-align: center;
+}
+.naslednjiNaslov{
+    color: #ee301b;
+    font-size:40;
+    width: 100%;
+    text-align: center;
+}
+input[Type="button"]{
+    position: relative;
+left: auto;
+}
+
+/*hero page segment end*/
+/*od headerja naprej kar mam v alterniranih pic txt*/
+.home1 {
+    margin-left: 3%;
+    margin-right: 3%;
+   /* margin-bottom: 1%;*/
+    
+}
+
+
+
+.home1 .container .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.home1 .container .slide1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+
+}
+
+.home1 .container .slide1 .content {
+    padding: 2%;
+
+    flex: 1 1 45rem;
+
+}
+
+.home1 .container .slide1 .imge {
+    flex: 1 1 50rem;
+
+
+}
+
+.home1 .container .slide1 .imge img {
+    width: 100%;
+
+
+}
+
+.home1 .container .slide1 .imge2 {
+
+    flex: 1 1 45rem;
+
+}
+
+.home1 .container .slide1 .imge2 img {
+    width: 100%;
+
+}
+
+
+.home1 .container .slide .content span {
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+
+}
+
+
+.home1 .container .slide .content {
+    padding: 2%;
+
+    flex: 1 1 45rem;
+
+}
+
+.home1 .container .slide .imge {
+    flex: 1 1 45rem;
+
+
+}
+
+.home1 .container .slide .imge img {
+    width: 100%;
+
+
+}
+
+.home1 .container .slide .imge2 {
+
+    flex: 1 1 45rem;
+
+}
+
+.home1 .container .slide .imge2 img {
+    width: 100%;
+
+}
+
+
+.home1 .container .slide .content span {
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+
+}
+
+.container {
+    /*#EAE7DC*/
+    background-color:rgb(250, 227, 197);
+    
+}
+.home1 {
+    transform: translateX(-100%);
+    transition: 1s;
+    opacity: 0;
+     
+  }
+  
+  .home1.visible {
+    transform: translate(0); 
+    opacity: 1;
+}
+
+  
+/*od headerja naprej kar mam v alterniranih pic...txt end*/
+/*navbar*/
+.topnav {
+    
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    min-width: 5%;
+    height: auto;
+    color: #91908d;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 1%;
+}
+
+.topnav a:hover {
+    background-color: #ee301b;
+}
+header{
+   
+    justify-content: center;
+}
+/*navbar end*/
+/*slideshow*/
+.home2 {
+    display: flex;
+    justify-content: center;
+}
+.naslovSlide{
+    text-align: center; 
+    color: #ee301b;
+    font-size:50px;
+
+}
+
+.slideshows {
+    background-color:rgb(250, 227, 197) ;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.home2 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.slider {
+    width: 85vmin;
+
+
+
+}
+
+.home2 .slider .imgContainer img {
+    width: 100%;
+    height: 26em;
+
+
+}
+
+@keyframes autoplay2 {
+    0% {
+        top: 100%
+    }
+
+    4% {
+        top: 0%
+    }
+
+    33.33% {
+        top: 0%
+    }
+
+    37.33% {
+        top: -100%
+    }
+
+    100% {
+        top: -100%
+    }
+}
+
+.imgContainer {
+    width: 94%;
+    border: 10px solid white;
+    margin-bottom: 3%;
+
+    height: 26em;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.imgContainer>* {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    animation: 12s autoplay2 infinite ease-in-out
+}
+
+.imgContainer>*:nth-child(1) {
+    animation-delay: 0s
+}
+
+.imgContainer>*:nth-child(2) {
+    animation-delay: 4s
+}
+
+.imgContainer>*:nth-child(3) {
+    animation-delay: 8s
+}
+
+.imgContainer>*:nth-child(4) {
+    animation-delay: 12s
+}
+/*slideshow end*/
+
+/*footer*/
+    footer{
+        background-color:rgb(156, 156, 156) ;
+        height: 20%;
+        display: flex;
+        margin-left: 3%;
+        margin-top: 1%;
+        margin-right: 3%;
+    }
+    .stolpci {
+        color: white;
+        
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 33%;
+    }
+    .stolpci a {
+        text-decoration: none;
+        color: white;
+    }
+    .stolpci a:hover {
+        text-decoration: underline ;   
+    }
+    iframe{
+        width: 70%;
+        float: right;
+        height: 12rem;
+        -webkit-filter: grayscale(70%);
+        -moz-filter: grayscale(70%);
+        -ms-filter: grayscale(70%);
+        -o-filter: grayscale(70%);
+         filter: grayscale(70%);
+        
+    }
+    .stolpci p {
+        float: left;
+    }
+    .stolpciKontent{
+        display: flex;
+        padding: 3%;
+    }
+/*footer end*/
+
+
+/*Menu*/
+
+.menuPage{
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(250, 227, 197);
+
+}
+.form{
+    margin: 2%;
+    background-color:rgb(250, 227, 197) ;
+    display: flex;
+    border: 10px solid white;
+    
+    padding: 1%;
+    
+}
+
+.spanCena{
+    background-color: #91908d;
+    
+    float: right;
+    color: rgb(255, 250, 250); 
+}
+.notranjost{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+}
+.naslovMenu{
+    text-align: center ;
+    font-size: 50px;
+}
+.form .notranjost .vsebina p{
+    font-size: 25px;
+}
+/*Menu end*/
+
+/*rezervacija*/
+/*kontakt info*/
+.kontakt h2{
+    text-align: center;
+}
+.vsebina2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.kontakt{
+    display:inline-block;
+    height: 250px;
+    padding: 1%;
+    margin: 2%;
+    background-color: rgb(156, 156, 156);
+    border: 10px solid white;
+    width: 300px;
+    border-radius: 12%;
+}
+/*kontakt info end*/
+
+
+
+
+
+
+/*forma*/
+/*.miza {
+    display:inline-flex;
+    width: 10rem;
+    margin: 2%; 
+    justify-content: center;
+    background-color: rgb(156, 156, 156) ;
+    height: 10rem;
+    align-items: center;
+    padding: 10px;
+    
+    
+    cursor: pointer;
+  }
+  
+  .miza:hover {
+    background-color: lightgray;
+  }
+  
+  .miza input[type="radio"] {
+    display: none;
+  }
+  
+  .miza input[type="radio"]:checked + label {
+    font-weight: bold;
+  }*/
+
+  .buttoni{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  .labelMiza{
+    color: white;
+   
+    display:inline-block;
+    
+    margin: 2%; 
+    justify-content: center;
+    background-color: rgb(156, 156, 156) ;
+    width: 140px;
+    height: 140px; 
+    border-radius:10%;
+    
+  }
+  input:checked + label{
+    background-color:#ee301b ;
+  }
+  
+
+
+.form input[type=text],.form input[type=email],.form input[type="datetime-local"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .imgTloris{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .imgTloris img{
+    width: 100%;
+    max-width: 39rem;
+    max-height: 39rem;
+    
+  }
+  
+  .rezervacijaBtn{
+    width: 100%; 
+    justify-content: center;
+  font-size: 30px;
+
+  }
+  .rezervacijaBtn p {
+    padding: auto;
+  }
+ 
+
+  .rezervacijaBtn:hover{
+    background-color: #ee301b;
+    color: white;
+  }
+  /*rezervacija end*/
+/*forma end*/
+
+/*pizza calc*/
+.centralizacija{
+    display: flex;
+    justify-content: center;
+}
+
+.tipPice{
+    color: white;  
+    display: block;
+    width: 90px;
+    height: 40px;
+    margin: 2%; 
+    justify-content: center;
+    background-color: rgb(156, 156, 156) ;
+    
+   padding: 10px;
+    border-radius:5%;
+}
+
+.Kalk{
+    padding: 2%;
+    border-right: 10px solid white;
+    width: 65%;
+}
+
+.vsebina3{
+    display: flex; 
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+.rezultati{
+    padding: 3%;
+}
+
+  .containerKalk  .slideKalk  {
+    flex: 1 1 30rem; 
+}
+
+ .containerKalk  .slidekalk .imgeKalk  {
+    flex: 1 1 30rem;   
+}
+
+ .containerKalk  .slidekalk .imgeKalk  img {
+    
+    width:100%;
+    max-width: 30rem;
+    max-height: 30rem;
+    
+}
+.containerKalk  .slidekalk .imgeKalk  img:nth-of-type(1){
+    display: none;
+}
+.containerKalk  .slidekalk .imgeKalk  img:nth-of-type(2){
+    display: none;
+}
+.containerKalk  .slidekalk .imgeKalk  img:nth-of-type(3){
+    display: none;
+}
+
+
+.formKalk{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:rgb(250, 227, 197) ;
+    display: flex;
+    border: 10px solid white;
+    justify-content: center;
+    max-width: 900px;
+    
+    
+}
+.izracunajBtn1{
+    float: left;
+}
+.izracunajBtn{
+    float: right;
+}
+.mokaOsebe{
+    display: inline-flex;
+    justify-content: center;
+}
+.mokaOsebe input[type="text"]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+.Moka{
+    display: none;
+}
+.vlagaTxt{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    border: none;
+    background: #f1f1f1;
+}
+
+/*pizza calc end*/
