@@ -103,7 +103,7 @@ function izracunaj() {
     let brake4 = document.createElement("br");
     let brake5 = document.createElement("br");
     let brake6 = document.createElement("br");
-
+    //v osnovnem html js morš apendad vsak elemet posebej ali pa dejansko zzrisat celoten innerHTML ala: document.innerHTML(`<div> </div>` itd itd)
     let element = document.getElementById("rezultati");
     element.appendChild(izbranaPicaNode);
     element.appendChild(brake3);
